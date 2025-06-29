@@ -1,37 +1,64 @@
-readme_content = """# Hunt the Wumpus
+# Hunt The Wumpus
 
-A Python-based reimagining of the classic Hunt the Wumpus game using pygame.
+A Python remake of the classic 1970s game **Hunt the Wumpus**, where you explore a dangerous cave system and try to survive long enough to slay the mysterious Wumpus.
 
-How to Play
-Download the game files, extract them, and run the executable HuntTheWumpus.exe to start playing.
+## 🎮 Game Overview
 
-Overview
-This game is a graphical version of the 1970s text-based adventure, where players navigate a dangerous cave filled with hazards—including bottomless pits, bats that relocate you randomly, and the dreaded Wumpus itself.
+You are a hunter exploring a cave made up of connected rooms. Somewhere in this cave lurks the Wumpus. Your goal is to find and shoot the Wumpus without falling into a bottomless pit or getting dragged away by bats.
 
-Your goal? Survive the cave and take down the Wumpus before it gets you.
+As you explore, you'll get clues that help you sense nearby dangers:
 
-Gameplay Features
-Exploration: Move through interconnected rooms in a mysterious cave.
-Hazards: Avoid pits and bats that disrupt your movement.
-Hunting: Carefully aim and shoot arrows to eliminate the Wumpus.
-Randomization: The cave layout, hazards, and Wumpus location change every game.
-Controls
-Arrow keys: Move through the cave.
-Shift + Arrow key: Fire an arrow in the chosen direction.
-Escape: Quit the game.
-Mouse Click:
-Click Restart to start fresh.
-Click Quit to exit.
-Installation & Running the Game
-Option 1: Using the Executable
-Download the latest release from GitHub Releases. [https://github.com/jeremycodingfr/Hunt-The-Wumpus]
-Extract the downloaded ZIP file.
-Run HuntTheWumpus.exe to start playing.
-Option 2: Running the Source Code
-Prerequisites
-Python 3.x
-pygame installed (pip install pygame)
-Steps
-Clone this repository:
-git clone https://github.com/jeremycodingfr/Hunt-The-Wumpus
-cd hunt-the-wumpus
+* **You see a bloody circle beneath you – the Wumpus is near.**
+* **"You feel a draft nearby."** – there's a pit nearby.
+* **"You hear the squeaking of bats nearby."** – bats are in a nearby room.
+
+Make your moves carefully, as one wrong step can end your adventure.
+
+## 🐍 Technologies Used
+
+* Python 
+
+## 🛠️ How to Install and Run
+
+1. Clone the Repository:
+
+   ```
+   git clone https://github.com/jeremycodingfr/Hunt-The-Wumpus.git
+   cd Hunt-The-Wumpus
+   ```
+
+2. Run the Game:
+
+   ```
+   python main.py
+   ```
+
+Make sure you have Python 3 installed on your system.
+
+## 🎯 How to Play
+
+* Start in a random cave room.
+* Choose a connected room to move to.
+* Watch for clues and avoid dangers.
+* You only get one arrow to shoot the Wumpus.
+* Survive and win, or die trying.
+
+## 📁 File Structure
+
+```
+Hunt-The-Wumpus/
+├── main.py          # Main game loop
+├── map.py           # Cave generation and room connections
+├── player.py        # Player state and actions
+├── wumpus.py        # Game mechanics and hazards
+└── README.md        # This file
+```
+
+## 👤 Author
+
+Created by **Jeremy Nguyen**
+GitHub: [jeremycodingfr](https://github.com/jeremycodingfr)
+
+## 📄 License
+
+This project is licensed under the MIT License.
